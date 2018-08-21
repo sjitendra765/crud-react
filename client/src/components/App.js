@@ -30,7 +30,7 @@ export default class App extends Component {
                 <Route exact path="/" component={Home} />
                 <Route path="/signin" component={RequireUnauth(Signin)} />
                 <Route path="/signup" component={RequireUnauth(Signup)} />
-                <Route path="/about" component={RequireAuth(About)} />
+                <Route path="/home" component={RequireAuth(About)} />
                 <Route path="/list" component={RequireAuth(List)} />
                 <Route path="/user/:id" component={RequireAuth(View)} />
                 <Route path="/edit/:id" component={RequireAuth(Edit)} />
